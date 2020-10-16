@@ -1,7 +1,7 @@
 ---
 # add a version for the package, e.g. "2.17.0-1"
 okapi_version:
-okapi_role: cluster
+okapi_role: dev
 # 'eth0' is the default ec2 network interface. May be different on other systems
 okapi_interface: eth0
 okapi_cluster_port: 9001
@@ -24,6 +24,7 @@ okapidb_user: okapi
 okapidb_password: okapi25
 okapidb_name: okapi
 okapi_dockerurl: http://localhost:4243
+okapi_log_level: DEBUG
 
 okapi_metrics: 0
 carbon_host: localhost

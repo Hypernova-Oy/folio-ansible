@@ -46,6 +46,15 @@
   when: hazelcast_aws_conf
   notify: okapi restart
 
+- name: Install log4j2.properties
+  become: yes
+  template:
+    src: log4j2.properties
+    dest: /etc/folio/okapi/log4j2.properties
+    owner: okapi
+    group: okapi
+    mode: 0640
+  notify: okapi restart
 
 - name: Initialize okapi database
   become: yes
