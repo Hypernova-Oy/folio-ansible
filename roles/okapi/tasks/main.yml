@@ -49,7 +49,7 @@
 - name: Install log4j2.properties
   become: yes
   template:
-    src: log4j2.properties
+    src: log4j2.properties.j2
     dest: /etc/folio/okapi/log4j2.properties
     owner: okapi
     group: okapi
